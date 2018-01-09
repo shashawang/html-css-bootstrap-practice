@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!--干嘛用的？-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>grid practice</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+</head>
+
+<body>
+<div class="container-fluid"><!--怎么固定宽度-->
+<div class="row">
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+  </div>
+<!--
+  .make-row(@gutter:@grid-gutter-width){
+      .clearfix()
+
+      @media(min-width:@screen-sm-min){
+          margin-left: (@gutter /-2);
+          margin-right:(@gutter /-2);
+      }
+      .row{
+          margin-left:(@gutter /-2);
+          margin-right:(@gutter /-2);
+      }
+  }
+  应该放在哪-->
+  <abbr title="attribute">attr</abbr>
+  <cite title="Source Title">Source Title</cite>
+  <ul class="list-inline">
+    <li>apple</li>
+    <li>banana</li>
+    <li>orange</li>
+  </ul>
+  <blockquote>In the depth of winter, I finally learned that within me there lay an invincible summer.
+<footer><cite>Albert Camus</cite></footer></blockquote>
+<blockquote class="blockquote-reverse">Circumstances may cause interruptions and delays, but never lose sight of your goal.<br /><cite>from a wise man</cite></blockquote>
+  <dl class="dl-horizotal"> <!--why短语和描述没有在一行--><!--text-overflow属性咋用来水平截断？-->
+      <dt>Description lists</dt>
+      <dd>A description list is perfect for defining terms.</dd>
+      <dt>Euismod</dt>
+      <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.<br />
+        Donec id elit non mi porta gravida at eget metus.</dd>
+  </dl>
+  <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
+  <p>To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
+  <pre class="pre-scrollable">&lt;p&gt;Sample <br />text <br />here<br />Sample <br />text <br />here<br />Sample <br />text <br />here<br />Sample <br />text <br />here<br />...&lt;/p&gt;</pre>
+  <!--垂直方向有箭头，why不能滚动-->
+  <var>y</var>=<var>m</var><var>x</var>+<var>b</var>
+  <samp>hahahaha</samp>
+  <p>hahahaha</p>
+  <div class="table-responsive">
+  <table class="table table-condensed ">
+      <caption>test</caption>
+      <tr class="active"><!--只是颜色改变，内容也应该有提示，或.sr-only为特定屏幕隐藏-->
+          <th>first name</th>
+          <th>last name</th>
+          <th>username</th>
+          <th>first name</th>
+          <th>last name</th>
+          <th>username</th>
+          <th>first name</th>
+          <th>last name</th>
+          <th>username</th>
+          <th>first name</th>
+          <th>last name</th>
+          <th>username</th>
+      </tr>
+      <tr class="danger">
+          <td>mark</td>
+          <td>otto</td>
+          <td>mdo</td>
+          <td>mark</td>
+          <td>otto</td>
+          <td>mdo</td>
+          <td>mark</td>
+          <td>otto</td>
+          <td>mdo</td>
+          <td>mark</td>
+          <td>otto</td>
+          <td>mdo</td>
+      </tr>
+      <tr class="success">
+          <td>jacob</td>
+          <td>thorton</td>
+          <td>fat</td>
+          <td>jacob</td>
+          <td>thorton</td>
+          <td>fat</td>
+      </tr>
+  </table>
+</div>
+</div>
+
+<form class="form-inline">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputfile">file input</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">Example block-level help text here</p>
+    </div>
+    <div class="checkbox">
+        <label>
+          <input type="checkbox"> Check me out
+        </label>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputEmail3">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputPassword3">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+      </div>
+      <!--sr-only上面说用来提醒的，为啥用完看不见label里的文字惹-->
+</form>
+
+</body>
+</html>
