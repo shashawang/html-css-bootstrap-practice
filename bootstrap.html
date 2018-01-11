@@ -137,8 +137,134 @@
         <label class="sr-only" for="exampleInputPassword3">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
       </div>
+      <!--label标签，鼠标用户、屏幕阅读器，不存在Label标签或label替代属性，屏幕阅读器用placeholder属性-->
       <!--sr-only上面说用来提醒的，为啥用完看不见label里的文字惹-->
+      <div class="form-group">
+          <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+          <div class="input-group">
+              <div class="input-group-addon">$</div>
+              <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+              <div class="input-group-addon">.00</div>
+          </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Transfer cash</button>
+      <textarea class="form-control" rows="1" placeholder="to write"></textarea>
+
+      <label class="checkbox-inline"><!--why label里没有id-->
+        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+      </label>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+        </label>    <!--value值是干嘛的-->
+      </div>
+
+      <select multiple class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+      </select>
+
+      <div class="form-group">
+          <label class="sr-only">Email</label>
+          <p class="form-control-static">email@example.com</p>
+      </div>
+      <div class="form-group">
+          <label for="inputPassword2" class="sr-only">Password</label>
+          <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-default">Confirm identity</button>
 </form>
 
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="xxx" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="" id="" placeholder="">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">Remeber me
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">sign in</button>
+        </div>
+    </div>
+    <div class="checkbox">
+        <label>
+          <input type="checkbox" value="">
+          Option one is this and that&mdash;be sure to include why it's great
+        </label>
+      </div>
+      
+      <div class="checkbox disabled">
+        <label>
+          <input type="checkbox" value="" disabled>
+          Option two is disabled
+        </label>
+      </div>
+      <!--<label> 内没有文字,是指没有class radio-inline？-->                       
+</form>
+
+<div >
+        <label class="sr-only" for="inputHelpBlock">Input with heop text</label>
+        <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+        <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span> 
+</div>
+<div class="form-group has-success">
+        <label class="control-label" for="inputSuccess1">Input with success</label>
+        <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+        <span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+      </div>
+      
+      <div class="form-group has-error">
+          <label class="control-label" for="inputError">error55</label>
+          <input type="text" class="form-control" id="inputError">
+      </div>
+
+      <div class="has-success">
+          <div class="checkbox">
+              <label>
+                  <input type="checkbox" id="checkboxSuccess" value=""
+              </label>
+          </div>
+      </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
