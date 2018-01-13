@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--干嘛用的？-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>grid practice</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-info">
+                    <div class="panel-heading ">
+                        <h1 class="panel-title">i'm a page using panel</h1>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="true">
+                                Dropdown
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="nav nav-pills">
+                            <li role="presentation" class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li role="presentation" class="dropdown">
+                                <a href="#">Profile</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#">Messages</a>
+                            </li>
+                        </ul>
+                        <p>……</p>
+                    </div>
+
+                    <table class="table table-condensed ">
+
+                        <tr class="active">
+                            <!--只是颜色改变，内容也应该有提示，或.sr-only为特定屏幕隐藏-->
+                            <th>first name</th>
+                            <th>last name</th>
+                            <th>username</th>
+                        </tr>
+                        <tr class="danger">
+                            <td>mark</td>
+                            <td>otto</td>
+                            <td>mdo</td>
+                        </tr>
+                        <tr class="success">
+                            <td>jacob</td>
+                            <td>thorton</td>
+                            <td>fat</td>
+                        </tr>
+                    </table>
+                    <dvi class="panel-footer">ok?how can this part be longer?</dvi>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
