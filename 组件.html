@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--组件-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--干嘛用的？-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>vue practice</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+    <div id="example">
+        <my-component></my-component>
+    </div>
+
+    <div id="e">
+        <child message="hello!"></child>        
+    </div>
+</body>
+
+</html>
+
+<script>
+    // 注册
+    Vue.component('my-component', {
+        template: '<div>A custom component!</div>'
+    })
+
+    // 创建根实例
+    new Vue({
+        el: '#example'
+    })
+
+    /* var Child = {
+        template: '<div>A custom component!</div>'
+    }
+
+    new Vue({
+        el: '#e',
+        components: {
+            // <my-component> 将只在父组件模板中可用
+            'my-component': Child
+        }
+    })  */
+
+    Vue.component('child', {
+        // 声明 props
+        props: ['message'],
+        // 就像 data 一样，prop 也可以在模板中使用
+        // 同样也可以在 vm 实例中通过 this.message 来使用
+        template: '<span>{{ message }}</span>'
+    })
+    new Vue({
+        el: '#e',       
+    })
+</script>
