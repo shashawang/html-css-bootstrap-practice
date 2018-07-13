@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>轮播图</title>
+        <script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
+        <style>
+            #loopDiv{
+                width: 790px;
+                height: 340px;
+                margin: 0 auto;
+                position: relative;
+            }
+            
+            #list{
+                list-style: none;
+            
+                position: absolute;
+                bottom: 10px;
+                left: 250px;
+            }
+            #list li{
+                float: left;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                border-radius: 50%;
+                background: #aaa;
+                margin-right: 10px;
+            }
+            .chooseBut{
+                width: 50px;
+                height: 80px;
+                background-color: rgba(0,0,0,0.2);
+                color: #fff;
+                font-size: 30px;
+                line-height: 80px;
+                text-align: center;
+                display: none;
+            }
+            #left{
+                position: absolute;
+                left: 0px;
+                top: 130px;
+            }
+            #right{
+                position: absolute;
+                right: 0px;
+                top: 130px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="app">
+            <div id="loopDiv">
+                <div id="pic"></div>
+                <ul id="list">
+                    <li :list="list" v-for="item in list">{{item}}</li>
+                </ul>
+                <div id="left" class="chooseBut"><</div>
+                <div id="right" class="chooseBut">></div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        const list = function() {
+            let list = []
+            for(let i = 0; i < 18; i++){
+                list.push(i)
+            }
+            return list
+        }
+        var app = new Vue({
+            el: '#app',
+            data: {
+                list: list
+            }
+        })
+    </script>
+
