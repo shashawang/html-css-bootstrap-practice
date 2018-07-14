@@ -6,17 +6,34 @@
     <style>
         #loopDiv{
             width: 790px;
-            height: 340px;
+            height: 640px;
             margin: 0 auto;
             position: relative;
+            /* border: solid 1px yellow; */
+        }
+
+        #pic{
+            display:table-cell;
+            text-align: center;
+            vertical-align:middle;
+            max-width: 400px;
+            max-height: 500px;
+            margin: 50px auto 0;
+        }
+
+        #text{
+            text-align: center;
+            font-weight: 900;
         }
         
         #list{
             list-style: none;
-        
             position: absolute;
             bottom: 10px;
-            left: 250px;
+            left: 100px;
+            /* display: flex;
+            justify-content: center;
+            border: solid 1px blue; */
         }
         #list li{
             float: left;
@@ -27,6 +44,11 @@
             border-radius: 50%;
             background: #aaa;
             margin-right: 10px;
+        }
+        .round{
+            border-radius: 50%; 
+            border: solid 1px red;
+            line-height: 20px;
         }
         .chooseBut{
             width: 50px;
@@ -52,7 +74,7 @@
 </head>
 <body>
     <div id="loopDiv">
-        <!-- ![](img/0.jpg) -->
+        <p id="text">表情包之小<span class="round">丸</span>子</p>
         <img id="pic">
         <div id="left" class="chooseBut"><</div>
         <div id="right" class="chooseBut">></div>
